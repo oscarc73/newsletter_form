@@ -11,48 +11,40 @@
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
   </style>
   <link rel="stylesheet" href="./style/style.css">
+  <script type="module" src="./main.js" defer></script>
 
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
 <body>
 
   <div class="content">
-    <article>
-      <!-- Sign-up form start -->
+    <div class="form">
+      <article>
+        <!-- Sign-up form start -->
 
-      <h1>Stay updated!</h1>
+        <h1>Stay updated!</h1>
 
-      <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
 
-      
-      <ul>
-        <li><img src="../assets/images/icon-list.svg" alt="">Product discovery and building what matters</li>
-        <li><img src="../assets/images/icon-list.svg" alt="">Measuring to ensure updates are a success</li>
-        <li><img src="../assets/images/icon-list.svg" alt="">And much more!</li>
-      </ul>
 
-      <label for="email">Email address</label>
-      <input type="email" name="correo" id="email" placeholder="email@company.com">
+        <ul>
+          <li><img src="../assets/images/icon-list.svg" alt="">Product discovery and building what matters</li>
+          <li><img src="../assets/images/icon-list.svg" alt="">Measuring to ensure updates are a success</li>
+          <li><img src="../assets/images/icon-list.svg" alt="">And much more!</li>
+        </ul>
 
-      <button type="submit">Subscribe to monthly newsletter</button>
-      <!-- Sign-up form end -->
-    </article>
-    <section>
-      <img src="../assets/images/illustration-sign-up-desktop.svg" alt="illustration-sign-up-desktop">
-    </section>
+        <label for="email"><b>Email address</b></label>
+        <input type="email" name="correo" id="email" placeholder="email@company.com">
+
+        <button type="submit">Subscribe to monthly newsletter</button>
+        <!-- Sign-up form end -->
+      </article>
+      <section>
+        <img src="../assets/images/illustration-sign-up-desktop.svg" alt="illustration-sign-up-desktop">
+      </section>
+    </div>
   </div>
 
   <!-- Success message start -->
@@ -71,6 +63,5 @@
       Mentor</a>.
     Coded by <a href="#">Oscar Carabali</a>.
   </div>
-</body>
 
 </html>

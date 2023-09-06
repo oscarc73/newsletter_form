@@ -1,9 +1,7 @@
 /*
   1. Use a more-intuitive box-sizing model.
 */
-*,
-*::before,
-*::after {
+* {
     box-sizing: border-box;
 }
 
@@ -28,8 +26,12 @@ body {
     5. Improve text rendering
   */
 body {
-    line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6em;
+    letter-spacing: 1px;
 }
 
 /*
@@ -96,19 +98,11 @@ li {
     color: var(--text_color);
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6em;
-    letter-spacing: 1px;
-}
-
 h1,
 h2,
 h3,
 h4 {
-    font-size: 35px;
+    font-size: 40px;
     font-weight: 700;
 }
 
@@ -124,4 +118,75 @@ ul,
 li {
     list-style: none;
     padding: 0;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* Section one */
+.content {
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 3.125rem;
+    margin-bottom: 3.125rem;
+}
+
+.form {
+    width: 65%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 8px var(--charcoal_grey);
+    border-radius: 1rem;
+    padding: 16px;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 0 50px;
+}
+
+article * {
+    margin: 8px 0;
+}
+
+article ul li {
+    display: flex;
+    
+}
+
+article ul li img {
+    margin: 0px 24px 0px 0px;
+}
+
+article input {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid var(--grey);
+}
+
+article button {
+    border: none;
+    padding: 16px;
+    background-color: var(--dark_slate_grey);
+    color: var(--white_color);
+    font-weight: 600;
+    border-radius: 8px;
+    transition:
+        background-color 200ms ease-in-out;
+}
+
+/* esto hay que ponerle una clase en javascript para que cuando se de clic al boton cambie de color */
+.background-color {
+    background-color: var(--primary_color_tomato);
 }
