@@ -162,20 +162,25 @@ article * {
 
 article ul li {
     display: flex;
-    
+
 }
 
 article ul li img {
     margin: 0px 24px 0px 0px;
 }
 
-article input {
+article form {
+    display: flex;
+    flex-direction: column;
+}
+
+#email {
     padding: 8px 12px;
     border-radius: 8px;
     border: 1px solid var(--grey);
 }
 
-article button {
+#button {
     border: none;
     padding: 16px;
     background-color: var(--dark_slate_grey);
@@ -186,7 +191,28 @@ article button {
         background-color 200ms ease-in-out;
 }
 
-/* esto hay que ponerle una clase en javascript para que cuando se de clic al boton cambie de color */
-.background-color {
+#button:hover {
+    cursor: pointer;
     background-color: var(--primary_color_tomato);
+}
+
+.invalid-input {
+    color: var(--primary_color_tomato) !important;
+    border-color: var(--primary_color_tomato) !important;
+    background-color: hsl(4deg 100% 67% / 14%) !important;
+}
+
+.invalid-input::placeholder {
+    color: var(--primary_color_tomato);
+}
+
+.labelEmail {
+    position: relative;
+}
+
+.labelEmail::after {
+    content: "Valid email required";
+    position: absolute;
+    right: 0;
+    color: var(--primary_color_tomato);
 }
