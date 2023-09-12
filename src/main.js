@@ -1,10 +1,12 @@
 const content = document.querySelector(".content")
-const boton = document.querySelector('#button');
+const boton = document.querySelector('.btn');
 const form = document.querySelector('#form');
-const inputEmail = document.querySelector("#email");
+const inputEmail = document.querySelector(".email");
 const labelEmail = document.querySelector("#labelEmail");
 const sectionFirst = document.querySelector('#firstMessege');
 const divSectTwo = document.querySelector("#startMessage");
+const imgSection = document.querySelector('.imgSection');
+
 
 //create structure of section two: Thanks for subscribing!
 const contentSuccess = () => {

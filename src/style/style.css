@@ -133,10 +133,6 @@ li {
     display: none !important;
 }
 
-#movile {
-    display: none;
-}
-
 /* Section one */
 .content {
     max-width: 1440px;
@@ -169,6 +165,10 @@ article * {
     margin: 8px 0;
 }
 
+article h1 {
+    margin-bottom: 24px;
+}
+
 article ul li {
     display: flex;
 
@@ -183,10 +183,10 @@ article form {
     flex-direction: column;
 }
 
-#email {
-    padding: 8px 12px;
+.email {
+    padding: 16px 24px;
     border-radius: 8px;
-    border: 1px solid var(--grey);
+    border: 1px solid hsl(231deg 7% 60% / 39%);
 }
 
 .btn {
@@ -265,12 +265,17 @@ input {
 
 @media (width < 500px) {
     .content {
-        display: none;
+        margin: 0;
     }
-    #movile {
-        display: block;
+    #firstMessege {
+        flex-direction: column-reverse;
+        padding: 0;
+        border-radius: 0;
+        box-shadow: none;
+        width: 100%;
     }
-    #movile section img {
+    #firstMessege section, 
+    #firstMessege section img {
         width: 100%;
     }
     article {
