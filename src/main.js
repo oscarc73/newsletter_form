@@ -17,7 +17,7 @@ const contentSuccess = () => {
     const inputDimiss = document.createElement('input');
 
     divSuccess.classList.add("success", "contentSucces")
-    img.src = `../assets/images/icon-success.svg`;
+    img.src = `https://raw.githubusercontent.com/oscarc73/newsletter_form/9e5fbfa17be79adff07e03038aec9a073f0156a7/assets/images/icon-success.svg`;
     h2.textContent = "Thanks for subscribing!";
     p.innerHTML = `A confirmation email has been sent to <b>ash@loremcompany.com.</b>
     Please open it and click the button inside to confirm your subscription.`;
