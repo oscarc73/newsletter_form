@@ -1,0 +1,22 @@
+{
+  "name": "newsletter_form",
+  "version": "1.0.0",
+  "description": "![Design preview for the Newsletter sign-up form with success message coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/oscarc73/newsletter_form.git"
+  },
+  "author": "Oscar <oscar.jcarabali@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oscarc73/newsletter_form/issues"
+  },
+  "homepage": "https://github.com/oscarc73/newsletter_form#readme",
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
+  }
+}
