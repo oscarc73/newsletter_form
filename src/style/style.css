@@ -264,6 +264,7 @@ input {
 }
 
 @media (width < 500px) {
+    /* section content */
     .content {
         margin: 0;
     }
@@ -275,10 +276,21 @@ input {
         width: 100%;
     }
     #firstMessege section, 
-    #firstMessege section img {
+    .imgSection  {
         width: 100%;
     }
     article {
         padding: 40px 24px;
+    }
+
+    /* section success */
+    .contentSucces {
+        margin-top: 0;
+        padding: 56px 24px;
+    }
+
+    .success {
+        box-shadow: none;
+        border-radius: 0;
     }
 }
